@@ -11,5 +11,5 @@ This Calculator is implemented by javascript.
 
 ## Screenshots
 
-![Image Link](https://lovepik.com/images/png-calculator.html)
+![Image Link](https://github.com/mohammadmehdisalehi/javasc/blob/master/js-02/IMG/b_5d0e3cd2a69c3.svg)
 
