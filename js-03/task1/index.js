@@ -19,7 +19,7 @@ function cal(num1,num2,op){
     return ('Not numerical value')
 }
 
-const leftNumber = +prompt("Enter first number 1: ")
+const leftNumber = +prompt("Enter first number: ")
 const operator = prompt("Enter the operator (+,-,*,/): ")
 const rightNumber = +prompt("Enter second number: ")
 
