@@ -1,6 +1,3 @@
-// function upperConvert(str) {
-
-
 function toUpCase(str)
 {
   let upStr=  str.toUpperCase()

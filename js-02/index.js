@@ -1,4 +1,4 @@
-const leftNumber = +prompt("Enter first number 1: ")
+const leftNumber = +prompt("Enter first number: ")
 const operator = prompt("Enter the operator : ")
 const rightNumber = +prompt("Enter second number: ")
 if(isNaN(leftNumber)|| isNaN(rightNumber)){
