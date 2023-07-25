@@ -1,5 +1,5 @@
 
-# Get input from the user and print in console log
+# Get number input from the user and printing the sum output in console log
 
 This code is implemented by javascript.
 
