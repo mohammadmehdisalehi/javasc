@@ -1,7 +1,7 @@
 
-# Calculator with four main operations
+# Function to convert lowercase string to upper case.
 
-This Calculator is implemented by javascript.
+This function is implemented by javascript.
 
 
 ## Authors
@@ -9,7 +9,5 @@ This Calculator is implemented by javascript.
 - [@MohammadMehdiSalehi](https://github.com/mohammadmehdisalehi)
 
 
-## Screenshots
 
-![Image Link](https://lovepik.com/images/png-calculator.html)
 
