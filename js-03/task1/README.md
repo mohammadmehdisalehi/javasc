@@ -1,5 +1,5 @@
 
-# Calculator with four main operations
+# Functional Calculator with four main operations.
 
 This Calculator is implemented by javascript.
 
@@ -9,7 +9,5 @@ This Calculator is implemented by javascript.
 - [@MohammadMehdiSalehi](https://github.com/mohammadmehdisalehi)
 
 
-## Screenshots
 
-![Image Link](https://lovepik.com/images/png-calculator.html)
 
