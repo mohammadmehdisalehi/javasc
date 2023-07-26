@@ -1,7 +1,7 @@
 
-# Calculator with four main operations
+# Average function of five number given by user which shows error if mean is less than 12.
 
-This Calculator is implemented by javascript.
+This function is implemented by javascript.
 
 
 ## Authors
@@ -9,7 +9,4 @@ This Calculator is implemented by javascript.
 - [@MohammadMehdiSalehi](https://github.com/mohammadmehdisalehi)
 
 
-## Screenshots
-
-![Image Link](https://lovepik.com/images/png-calculator.html)
 
