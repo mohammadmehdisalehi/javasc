@@ -1,6 +1,9 @@
 function avg(num1,num2,num3,num4,num5)
 {
   let avgValue=  (num1+num2+num3+num4+num5)/5
+  if (avgValue<12){
+    console.log("Failure try another time.")
+  }
   return avgValue
 }
 const n1 = +prompt("Enter first number: ")
