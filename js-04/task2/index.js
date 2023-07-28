@@ -1,5 +1,3 @@
-let c = 50;
-let f = 0;
 function  Celsius_Fahrenheit (cel){
     far = (cel * (9 / 5)) + 32;
     return far
