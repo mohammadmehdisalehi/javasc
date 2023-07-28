@@ -1,3 +1,4 @@
+// we can also use search() method
 function find_word(str, myWord){
     
     var wordFreq = 0, wordLen=0;
