@@ -8,7 +8,12 @@ function randomDate(
     );
   }
 
+  function randomName(){
+    const nameList=['ali','majid','hossein','karim','mohammad','mehdi','marzie','nasim','nader','aram','dani','reza','ahmad','sara','shakiba','shamim','shadi','shahla','saba','yaser','jasem','ghasem','kaezem','gholi','ghader','samir','samira','yas','saleh','salim']
+    return nameList[Math.floor(Math.random() * nameList.length)];
 
+    
+  }
 
 
   const myList=[]
@@ -16,11 +21,11 @@ function randomDate(
     const myObject ={
 
         myDate:randomDate(),
-        myNumber:Math.random(),
-        myName:randomName,
+        myNumber:Math.floor(Math.random() * 100) + 1,
+        myName:randomName(),
 
       }
 myList.push(myObject)
   }
-
-  console.log(mydate.dd)
+  addToList();
+  console.log(myList);
