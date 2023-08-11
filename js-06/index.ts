@@ -28,7 +28,7 @@ personList[personInd]={...personList[personInd],...person}
 }
 const removePerson=(person:peopleObject)=>{
     const personInd:number=personList.findIndex((element)=>element.id===person.id)
-    personList = personList.splice(personInd, 1);
+    let spliced = personList.splice(personInd, 1);
   
 }
 createPerson({
