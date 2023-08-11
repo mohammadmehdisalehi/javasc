@@ -1,25 +1,112 @@
 
-# Simple Person Management System using TypeScript
-This TypeScript code defines a simple CRUD (Create, Read, Update, Delete) operation for managing a list of persons in an array. Here's a breakdown of what the code does:
+# Sorting and Managing People Data
 
-1. **"use strict";**: This directive enforces a strict mode of JavaScript, which helps catch common coding mistakes and "unsafe" actions, promoting better coding practices.
+This repository contains TypeScript code for sorting and managing an array of people objects. Each person object has various properties like `id`, `name`, `age`, and more.
 
-2. **personList**: An array that initially holds information about two persons as objects. Each person object has properties such as `id`, `name`, `age`, and `major`.
+## Contents
 
-3. **createPerson**: A function that takes a `person` object as an argument and pushes it to the `personList` array. This function effectively adds a new person to the list.
+- [Description](#description)
+- [Usage](#usage)
+- [Functions](#functions)
+- [Example Usage](#example-usage)
+- [Code Breakdown](#BreakDown)
+## Description
 
-4. **updatePerson**: A function that takes a `person` object as an argument. It searches for a person in the `personList` array based on the `id` property, and if found, it updates the existing person's properties with the properties from the provided `person` object.
+The TypeScript code defines a `peopleObject` type, which represents a person's attributes like `id`, `name`, `age`, and others. The code also includes functions for creating, updating, and removing person objects, as well as a function for sorting an array of person objects based on a specified property.
 
-5. **removePerson**: A function that takes a `person` object as an argument. It finds the index of the person with the given `id` in the `personList` array and removes that person using the `splice` method.
+## Usage
 
-6. **createPerson** and **updatePerson** are demonstrated with two examples where a new person is created and an existing person's details are updated based on their `id`.
+1. Clone the repository or copy the code to your project.
+2. Customize the `peopleObject` type according to your needs.
 
-7. **console.log(personList)**: Prints the `personList` array to the console after creating, updating, and removing persons. This demonstrates the changes made to the array.
+## Functions
 
-8. The final **removePerson** and **console.log(personList)** sections demonstrate the removal of a person with the specified `id` and print the updated `personList` array again.
+### `createPerson(person: peopleObject): void`
 
-In summary, this TypeScript code showcases a basic way to manage a list of persons with operations like adding, updating, and removing persons from the list, using simple functions and an array. The example provided demonstrates these operations in action and outputs the results to the console.
+This function adds a new person object to the `personList` array.
 
+### `updatePerson(person: peopleObject): void`
+
+This function updates the attributes of an existing person object in the `personList` array based on the provided `id`.
+
+### `removePerson(person: peopleObject): void`
+
+This function removes a person object from the `personList` array based on the provided `id`.
+
+### `sortArrayOfObjects(array: peopleObject[], property: keyof peopleObject, ascending: boolean = true): peopleObject[]`
+
+This function sorts an array of person objects based on the specified property. It returns a new sorted array without modifying the original array.
+
+## Example Usage
+
+```typescript
+// Initialize personList array
+const personList: peopleObject[] = [
+    // ... initial person objects ...
+];
+
+// Create a new person
+createPerson({
+    id: "002-aaa",
+    name: "jalal",
+    lastName: "sins",
+    age: 44,
+    // ... other attributes ...
+});
+
+// Update a person's attribute
+updatePerson({
+    id: "002-aaa",
+    lastName: "sina",
+});
+
+// Remove a person
+removePerson({
+    id: "000-aaa",
+});
+
+// Sort the personList array by name
+const sortedArray = sortArrayOfObjects(personList, 'name');
+console.log(sortedArray);
+
+// Output the updated personList array
+console.log(personList);
+```
+
+Please make sure to replace the sample data and attributes with your actual data.
+
+## BreakDown
+Here's a breakdown of what the code does:
+---
+1. Defining the Person Type
+A peopleObject type is defined, representing attributes that can describe a person. These attributes include id, name, lastName, age, job, maritalStatus, gender, weight, height, and phone.
+
+2. Initializing the List of People
+A personList array is initialized with two initial peopleObject instances. These instances represent different people with various attributes.
+
+3. Creating a Person
+The createPerson function allows adding a new person to the personList array. It takes a person object as a parameter and pushes it to the array.
+
+4. Updating a Person
+The updatePerson function allows updating the attributes of an existing person in the personList array. It finds the index of the person using their id and merges the updated attributes into the existing person.
+
+5. Removing a Person
+The removePerson function enables removing a person from the personList array. It finds the index of the person using their id and removes them from the array using the splice method.
+
+6. Sorting People
+The sortArrayOfObjects function provides a way to sort an array of peopleObject instances based on a specified attribute. It takes the array, the property to sort by, and an optional parameter for sorting in ascending or descending order. It returns a new sorted array.
+
+7. Sorting and Output
+A sortedArray is generated by sorting the personList array based on the name attribute. The sorted array is then logged to the console.
+
+8. Demonstrating Operations
+Several operations are demonstrated using the defined functions:
+
+A new person named "jalal" is created and added to the list.
+The last name of the person with ID "002-aaa" is updated to "sina".
+The person with ID "000-aaa" is removed from the list.
+9. Displaying Updated List
+The updated personList array is logged to the console to showcase the effects of the demonstrated operations.
 ## Authors
 
 - [@MohammadMehdiSalehi](https://github.com/mohammadmehdisalehi)
