@@ -1,0 +1,22 @@
+{
+  "name": "js-06",
+  "version": "1.0.0",
+  "description": "CRUD people list",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohammadmehdisalehi/js.git"
+  },
+  "keywords": [
+    "CRUD"
+  ],
+  "author": "MohammadMehdiSalehi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohammadmehdisalehi/javasc/issues"
+  },
+  "homepage": "https://github.com/mohammadmehdisalehi/javasc#readme"
+}
