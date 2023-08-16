@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/output.css">
+    <title>Display Input</title>
+</head>
+<body>
+  <div class="container flex items-center justify-center ">
+<form class="w-2/3">
+    <div class="mb-6 ">
+      <label for="title" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Task Title:</label>
+      <input type="text" id="title" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+    </div>
+    <div class="mb-6">
+      <label for="desc" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Task Description:</label>
+      <input type="text" id="desc" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+    </div>
+    <button type="button" id="showbtn" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Show</button>
+    <div class=" mt-4 p-4  flex flex-col items-center justify-start  border border-dashed border-blue-400 rounded-lg  h-36 ">
+    <div class="bg-yellow-200 rounded-md text-blue-600 flex mt-[-12px]  " id="displayZone"></div>
+    <div class="text-blue-600 self-start " id="displayArea"></div>
+  </div>
+  </form>
+</div>
+   <!-- <script src="./dist/index.js"></script>  -->
+   <script>const displayButton = document.querySelector("#showbtn");
+    const inputField1 = document.getElementById("title");
+    const inputField2 = document.getElementById("desc");
+    const displayZone = document.getElementById("displayZone");
+    const displayArea = document.getElementById("displayArea");
+    displayButton === null || displayButton === void 0 ? void 0 : displayButton.addEventListener("click", () => {
+        displayZone.textContent = inputField1.value;
+        displayArea.textContent = inputField2.value;
+    });</script> 
+</body>
+</html>
