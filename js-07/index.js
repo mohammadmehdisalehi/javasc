@@ -2,27 +2,17 @@
 let personList = [
     {
         id: "000-aaa",
-        name: "zara",
-        lastName: "Malek",
+        name: "Amir",
         age: 19,
-        job: "Mechanic",
         maritalStatus: true,
-        gender: "female",
-        weight: 58,
-        height: 164,
-        phone: "0912546987",
+        major: "riazi",
     },
     {
         id: "001-aaa",
-        name: "hamid",
-        lastName: "jalili",
-        age: 19,
-        job: "Piper",
-        maritalStatus: false,
-        gender: "male",
-        weight: 68,
-        height: 176,
-        phone: "0939746352",
+        name: "shayan",
+        age: 26,
+        maritalStatus: true,
+        major: "computer",
     }
 ];
 const createPerson = (person) => {
@@ -34,7 +24,7 @@ const updatePerson = (person) => {
 };
 const removePerson = (person) => {
     const personInd = personList.findIndex((element) => element.id === person.id);
-    let spliced = personList.splice(personInd, 1);
+    personList = personList.splice(personInd, 1);
 };
 function sortArrayOfObjects(array, property, ascending = true) {
     const sortedArray = array.slice();
@@ -57,19 +47,14 @@ const sortedArray = sortArrayOfObjects(personList, 'name');
 console.log(sortedArray);
 createPerson({
     id: "002-aaa",
-    name: "jalal",
-    lastName: "sins",
-    age: 44,
-    job: "unkown",
+    name: "javad",
+    age: 29,
     maritalStatus: false,
-    gender: "male",
-    weight: 79,
-    height: 183,
-    phone: "44795848XXX",
+    major: "software",
 });
 updatePerson({
     id: "002-aaa",
-    lastName: "sina",
+    age: 27,
 });
 removePerson({
     id: "000-aaa"

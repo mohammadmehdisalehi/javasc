@@ -1,0 +1,29 @@
+{
+  "name": "js-08",
+  "version": "1.0.0",
+  "description": "Form that gets task info as input and show that as output",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohammadmehdisalehi/javasc.git"
+  },
+  "keywords": [
+    "task",
+    "form"
+  ],
+  "author": "MohammadMehdi Salehi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohammadmehdisalehi/javasc/issues"
+  },
+  "homepage": "https://github.com/mohammadmehdisalehi/javasc#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "flowbite": "^1.8.1"
+  }
+}
