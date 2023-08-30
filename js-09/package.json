@@ -1,0 +1,32 @@
+{
+  "name": "js-09",
+  "version": "1.0.0",
+  "description": "todo app",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc -w",
+    "tailwind": "npx tailwindcss -i ./index.css -o ./dist/output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohammadmehdisalehi/javasc.git"
+  },
+  "keywords": [
+    "showing",
+    "contact",
+    "list"
+  ],
+  "author": "Mohammad Mehdi Salehi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohammadmehdisalehi/javasc/issues"
+  },
+  "homepage": "https://github.com/mohammadmehdisalehi/javasc#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "flowbite": "^1.8.1"
+  }
+}
