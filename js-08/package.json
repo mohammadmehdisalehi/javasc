@@ -4,6 +4,8 @@
   "description": "Form that gets task info as input and show that as output",
   "main": "index.js",
   "scripts": {
+    "tsc":"tsc -w",
+    "tailwind":"npx tailwindcss -i ./index.css -o ./dist/output.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
