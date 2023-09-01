@@ -1,98 +1,67 @@
 
----
-# Contact Management Web App
+```markdown
+# Contact List Web Application
 
-This is a simple web application for managing a list of contacts. It allows you to add contacts with names, phone numbers, and storage locations (SIM or Device) and displays them in a contact list.
-
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Features](#features)
-- [Code Explanation](#code-explanation)
-- [How to Use](#how-to-use)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Introduction
-
-The Contact Management Web App is built using HTML, JavaScript, and TypeScript. It provides a basic user interface for adding contacts and viewing them in a list.
+This is a simple web application for managing a contact list. Users can add new contacts, view existing contacts, and toggle between SIM and Device storage options.
 
 ## Features
 
-- Add a new contact with a unique ID, name, phone number, and storage location.
-- Display the list of added contacts.
-- Show/hide the contact list drawer.
-- Input validation and handling for empty values.
+- Add new contacts with a name and phone number.
+- Choose to store contacts in either SIM or Device storage.
+- View the list of added contacts.
+- Toggle the contact list drawer for easy access.
 
-## Code Explanation
+## Getting Started
 
-### Type Definitions
+To get started with this project, follow these steps:
 
-```typescript
-type Contactprops = {
-  id: string;
-  contactName: string;
-  phoneNumber: string | number;
-  storage: "SIM" | "Device";
-  avatar: string | null;
-};
+1. Clone this repository to your local machine:
 
-type ContactListType = Contactprops[];
-const contactList: ContactListType = [];
-```
+   ```bash
+   git clone https://github.com/your-username/contact-list-app.git
+   ```
 
-This section defines TypeScript types for contact information and creates an empty array to store contacts.
+2. Open the project directory:
 
-### DOM Element Selection
+   ```bash
+   cd contact-list-app
+   ```
 
-```typescript
-const contactNameInput = document.querySelector<HTMLInputElement>("#contactName");
-const phoneNumberInput = document.querySelector<HTMLInputElement>("#phoneNumber");
-const submitButton = document.querySelector<HTMLButtonElement>("#submitButton");
-const deviceStorageInput = document.querySelector<HTMLInputElement>("#deviceStorage");
-const showContactButton = document.querySelector<HTMLButtonElement>("#showContactButton");
-const contentListDrawer = document.querySelector<HTMLButtonElement>("#contentListDrawer");
-const closeDrawer = document.querySelector<HTMLButtonElement>("#closeDrawer");
-const contactListElement = document.querySelector<HTMLUListElement>("#contactListElement");
-```
+3. Install any necessary dependencies:
 
-Here, DOM elements are selected using `querySelector` to interact with them in JavaScript.
+   ```bash
+   # Assuming you have Node.js installed
+   npm install
+   ```
 
-### Event Listeners
+4. Build the project:
 
-```typescript
-showContactButton?.addEventListener("click", () => {
-  contentListDrawer?.classList.remove("hidden");
-});
+   ```bash
+   npm run build
+   ```
 
-closeDrawer?.addEventListener("click", () => {
-  contentListDrawer?.classList.add("hidden");
-});
+5. Open the `index.html` file in your web browser to run the application.
 
-submitButton?.addEventListener("click", () => {
-  // Code for adding a new contact to the list and displaying it in the UI.
-});
-```
+## Usage
 
-Event listeners are added to buttons for showing/hiding the contact list drawer and handling contact submission.
+- Click the "Show Contacts" button to open the contact list drawer.
+- Fill in the contact's name and phone number.
+- Choose whether to store the contact in SIM or Device storage.
+- Click the "Submit" button to add the contact to the list.
+- You can toggle the contact list drawer by clicking the close button.
 
-### Contact Submission
+## Project Structure
 
-```typescript
-submitButton?.addEventListener("click", () => {
-  // Code for creating a new contact and adding it to the list.
-});
-```
+The project is structured as follows:
 
-This event listener handles contact submission. It creates a new contact object, adds it to the `contactList` array, and updates the UI to display the new contact.
-
-## How to Use
-
-1. Clone the repository to your local machine.
-2. Open `index.html` in a web browser.
-3. Use the provided interface to add contacts.
-4. Click the "Show Contacts" button to view the contact list.
-5. Click the "Close Drawer" button to hide the contact list.
-
+- `src/` directory contains the TypeScript source files.
+  - `even.ts` - Main Events of projects.
+  - `functions.ts` - Utility functions.
+  - `importer.ts` - DOM element imports.
+  - `state.ts` - Repeated DOM element imports (Consider consolidating with importer.ts).
+  - `types.ts` - TypeScript type definitions.
+- `dist/` directory contains the compiled JavaScript files and tailwind output.css classes.
+- `index.ts` - Main application logic.
+- `index.html` - HTML template for the web application.
 ## Authors
 - [@MohammadMehdiSalehi](https://github.com/mohammadmehdisalehi)
